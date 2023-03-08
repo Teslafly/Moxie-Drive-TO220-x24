@@ -1,0 +1,426 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 10
+Title "Moxie-Drive 24, vesc compatable motor controller"
+Date "2020-07-01"
+Rev "1.0"
+Comp "Marshall Scholz"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+12V #PWR?
+U 1 1 5ED3A505
+P 8700 2850
+AR Path="/5B3979B7/5ED3A505" Ref="#PWR?"  Part="1" 
+AR Path="/5D44BA97/5ED3A505" Ref="#PWR0920"  Part="1" 
+F 0 "#PWR0920" H 8700 2700 50  0001 C CNN
+F 1 "+12V" H 8715 3023 50  0000 C CNN
+F 2 "" H 8700 2850 50  0001 C CNN
+F 3 "" H 8700 2850 50  0001 C CNN
+	1    8700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2850 8700 2950
+Wire Wire Line
+	8950 3300 8700 3300
+Text HLabel 8950 3300 2    50   Output ~ 0
+12v_SENSE
+Wire Wire Line
+	8700 3300 8700 3250
+Connection ~ 8700 3300
+Wire Wire Line
+	8700 3350 8700 3300
+$Comp
+L Device:R R?
+U 1 1 5B3C01FE
+P 8700 3100
+AR Path="/5B3C01FE" Ref="R?"  Part="1" 
+AR Path="/5B3BCE62/5B3C01FE" Ref="R?"  Part="1" 
+AR Path="/5D44BA97/5B3C01FE" Ref="R901"  Part="1" 
+F 0 "R901" V 8800 3100 50  0000 C CNN
+F 1 "39k" V 8700 3100 50  0000 C CNN
+F 2 "pkl_dipol:C_0603" H 8700 3100 60  0001 C CNN
+F 3 "" H 8700 3100 60  0001 C CNN
+	1    8700 3100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B3C020C
+P 8700 3750
+AR Path="/5B3C020C" Ref="#PWR?"  Part="1" 
+AR Path="/5B3BCE62/5B3C020C" Ref="#PWR?"  Part="1" 
+AR Path="/5D44BA97/5B3C020C" Ref="#PWR0921"  Part="1" 
+F 0 "#PWR0921" H 8700 3750 30  0001 C CNN
+F 1 "GND" H 8700 3680 30  0001 C CNN
+F 2 "" H 8700 3750 60  0001 C CNN
+F 3 "" H 8700 3750 60  0001 C CNN
+	1    8700 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3650 8700 3750
+Text HLabel 4600 3200 0    50   Input ~ 0
+L_IN_A
+Wire Wire Line
+	7000 3550 7000 3500
+Wire Wire Line
+	7000 3250 7000 3300
+$Comp
+L Device:C_Small C907
+U 1 1 5D565E7F
+P 7000 3400
+F 0 "C907" H 7092 3446 50  0000 L CNN
+F 1 "10uF" H 7092 3355 50  0000 L CNN
+F 2 "pkl_dipol:C_0603" H 7000 3400 50  0001 C CNN
+F 3 "~" H 7000 3400 50  0001 C CNN
+F 4 "CL10A106MA8NRNC" H 7000 3400 50  0001 C CNN "PartNo"
+	1    7000 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 5200 3300 2    50   Input ~ 0
+H_IN_B
+Text HLabel 5200 3400 2    50   Input ~ 0
+L_IN_B
+Text HLabel 4600 3300 0    50   Input ~ 0
+H_IN_C
+Text HLabel 4600 3400 0    50   Input ~ 0
+L_IN_C
+Text HLabel 4600 3500 0    50   Output ~ 0
+FET_TEMP_SENSE
+Text Notes 4400 5250 0    50   ~ 0
+The temp resistor ladder\nis flipped from the vesc official hw\nbeacuse I do not want my 3.3v rail \nanywhere near 48+v\nwill need to invert adc reading
+Wire Wire Line
+	4400 5750 4400 5700
+Wire Wire Line
+	4400 5400 4400 5350
+$Comp
+L Device:C_Small C909
+U 1 1 5E136126
+P 7400 3400
+F 0 "C909" H 7492 3446 50  0000 L CNN
+F 1 "10uF" H 7492 3355 50  0000 L CNN
+F 2 "pkl_dipol:C_0603" H 7400 3400 50  0001 C CNN
+F 3 "~" H 7400 3400 50  0001 C CNN
+F 4 "CL10A106MA8NRNC" H 7400 3400 50  0001 C CNN "PartNo"
+	1    7400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3300 7400 3250
+Connection ~ 7400 3250
+Wire Wire Line
+	7400 3500 7400 3550
+Text Notes 6700 7600 0    50   ~ 0
+buck vin stby ic =120ua
+Wire Wire Line
+	7800 3550 7800 3500
+Wire Wire Line
+	7800 3300 7800 3250
+$Comp
+L Device:CP1_Small C910
+U 1 1 5DFC5686
+P 7800 3400
+F 0 "C910" H 7891 3446 50  0000 L CNN
+F 1 "47uF" H 7891 3355 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H" H 7800 3400 50  0001 C CNN
+F 3 "~" H 7800 3400 50  0001 C CNN
+F 4 "" H 7800 3400 50  0001 C CNN "v"
+F 5 " TAJB106K025RNJ" H 7800 3400 50  0001 C CNN "pn"
+F 6 "25v" H 7800 3400 50  0001 C CNN "Voltage"
+	1    7800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 24_control_board-rescue:C-Device-MoxiE_Control_board-rescue C?
+U 1 1 5DA1582B
+P 4400 5550
+AR Path="/5DA1582B" Ref="C?"  Part="1" 
+AR Path="/5D44BA97/5DA1582B" Ref="C902"  Part="1" 
+F 0 "C902" H 4400 5650 50  0000 L CNN
+F 1 "0.1uF" H 4400 5450 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 4438 5400 50  0001 C CNN
+F 3 "~" H 4400 5550 50  0001 C CNN
+	1    4400 5550
+	1    0    0    -1  
+$EndComp
+Text HLabel 4600 3700 0    50   Output ~ 0
+A_VSENSE
+Text HLabel 4600 3100 0    50   Input ~ 0
+H_IN_A
+Text HLabel 5200 3700 2    50   Output ~ 0
+A_ISENSE
+Text HLabel 5200 3800 2    50   Output ~ 0
+B_ISENSE
+Text HLabel 5200 3900 2    50   Output ~ 0
+C_ISENSE
+Text HLabel 4600 3800 0    50   Output ~ 0
+B_VSENSE
+Text HLabel 4600 3900 0    50   Output ~ 0
+C_VSENSE
+Text HLabel 4600 3600 0    50   Output ~ 0
+VBUS_VSENSE
+$Comp
+L power:+12V #PWR?
+U 1 1 5EDE93E6
+P 7400 3150
+AR Path="/5B3979B7/5EDE93E6" Ref="#PWR?"  Part="1" 
+AR Path="/5D44BA97/5EDE93E6" Ref="#PWR0913"  Part="1" 
+F 0 "#PWR0913" H 7400 3000 50  0001 C CNN
+F 1 "+12V" H 7415 3323 50  0000 C CNN
+F 2 "" H 7400 3150 50  0001 C CNN
+F 3 "" H 7400 3150 50  0001 C CNN
+	1    7400 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3250 7800 3250
+Wire Wire Line
+	7000 3250 7400 3250
+Wire Wire Line
+	7400 3250 7400 3150
+Text HLabel 4400 5350 2    50   Output ~ 0
+FET_TEMP_SENSE
+Text Notes 8900 3500 0    50   ~ 0
+recalculate r ladder\n20vmax. 3.3vmax out. 
+Wire Wire Line
+	5200 3700 5150 3700
+Wire Wire Line
+	5200 3800 5150 3800
+Wire Wire Line
+	5200 3900 5150 3900
+Wire Wire Line
+	4600 3500 4650 3500
+Wire Wire Line
+	4600 3600 4650 3600
+Wire Wire Line
+	4600 3700 4650 3700
+Wire Wire Line
+	4600 3800 4650 3800
+Wire Wire Line
+	4600 3900 4650 3900
+Wire Wire Line
+	4600 3300 4650 3300
+Wire Wire Line
+	4600 3400 4650 3400
+Wire Wire Line
+	5200 3400 5150 3400
+Wire Wire Line
+	5200 3300 5150 3300
+Wire Wire Line
+	4600 3200 4650 3200
+Wire Wire Line
+	4600 3100 4650 3100
+$Comp
+L power:GNDA #PWR0905
+U 1 1 5EE94645
+P 5750 3650
+F 0 "#PWR0905" H 5750 3400 50  0001 C CNN
+F 1 "GNDA" H 5755 3477 50  0000 C CNN
+F 2 "" H 5750 3650 50  0001 C CNN
+F 3 "" H 5750 3650 50  0001 C CNN
+	1    5750 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0904
+U 1 1 5EE94BAB
+P 6900 2500
+F 0 "#PWR0904" H 6900 2350 50  0001 C CNN
+F 1 "+3.3V" H 6800 2650 50  0000 L CNN
+F 2 "" H 6900 2500 50  0001 C CNN
+F 3 "" H 6900 2500 50  0001 C CNN
+	1    6900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3650 5750 3600
+Wire Wire Line
+	5750 3600 5150 3600
+$Comp
+L power:GND #PWR0903
+U 1 1 5EEA09FE
+P 4050 3050
+F 0 "#PWR0903" H 4050 2800 50  0001 C CNN
+F 1 "GND" H 4055 2877 50  0000 C CNN
+F 2 "" H 4050 3050 50  0001 C CNN
+F 3 "" H 4050 3050 50  0001 C CNN
+	1    4050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0908
+U 1 1 5EEA60F7
+P 5250 2950
+F 0 "#PWR0908" H 5250 2800 50  0001 C CNN
+F 1 "+12V" H 5265 3123 50  0000 C CNN
+F 2 "" H 5250 2950 50  0001 C CNN
+F 3 "" H 5250 2950 50  0001 C CNN
+	1    5250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0909
+U 1 1 5EEAD2DD
+P 5300 3100
+F 0 "#PWR0909" H 5300 2850 50  0001 C CNN
+F 1 "GND" V 5305 2972 50  0000 R CNN
+F 2 "" H 5300 3100 50  0001 C CNN
+F 3 "" H 5300 3100 50  0001 C CNN
+	1    5300 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 3100 5150 3100
+Wire Wire Line
+	5250 2950 5250 3000
+Wire Wire Line
+	5250 3000 5150 3000
+Wire Wire Line
+	4650 3000 4050 3000
+Wire Wire Line
+	4050 3000 4050 3050
+$Comp
+L Device:C_Small C901
+U 1 1 5EF1E214
+P 6500 3850
+F 0 "C901" H 6592 3896 50  0000 L CNN
+F 1 "2.2uF" H 6592 3805 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 6500 3850 50  0001 C CNN
+F 3 "~" H 6500 3850 50  0001 C CNN
+F 4 "CC0603KRX7R6BB104" H 6500 3850 50  0001 C CNN "PartNo"
+	1    6500 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0902
+U 1 1 5EF2D8AD
+P 6500 4100
+F 0 "#PWR0902" H 6500 3850 50  0001 C CNN
+F 1 "GNDA" H 6505 3927 50  0000 C CNN
+F 2 "" H 6500 4100 50  0001 C CNN
+F 3 "" H 6500 4100 50  0001 C CNN
+	1    6500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3950 6500 4100
+$Comp
+L Device:R R?
+U 1 1 5B3C0205
+P 8700 3500
+AR Path="/5B3C0205" Ref="R?"  Part="1" 
+AR Path="/5B3BCE62/5B3C0205" Ref="R?"  Part="1" 
+AR Path="/5D44BA97/5B3C0205" Ref="R902"  Part="1" 
+F 0 "R902" V 8600 3500 50  0000 C CNN
+F 1 "2k2" V 8700 3500 50  0000 C CNN
+F 2 "pkl_dipol:C_0603" H 8700 3500 60  0001 C CNN
+F 3 "" H 8700 3500 60  0001 C CNN
+	1    8700 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EFF1334
+P 6100 2500
+AR Path="/5E3B4D69/5EFF1334" Ref="#PWR?"  Part="1" 
+AR Path="/5EFF1334" Ref="#PWR?"  Part="1" 
+AR Path="/5D44BA97/5EFF1334" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 6100 2350 50  0001 C CNN
+F 1 "+5V" H 6115 2673 50  0000 C CNN
+F 2 "" H 6100 2500 50  0001 C CNN
+F 3 "" H 6100 2500 50  0001 C CNN
+	1    6100 2500
+	1    0    0    -1  
+$EndComp
+Text Label 6400 3500 2    50   ~ 0
+isense_pwr
+Wire Wire Line
+	6500 3500 6500 2950
+$Comp
+L Jumper:Jumper_3_Bridged12 JP901
+U 1 1 5EFFFBCB
+P 6500 2800
+F 0 "JP901" H 6500 2911 50  0000 C CNN
+F 1 "hall_pwr_jmp" H 6500 3002 50  0000 C CNN
+F 2 "pkl_jumpers:J_NCNO_0903_15" H 6500 2800 50  0001 C CNN
+F 3 "~" H 6500 2800 50  0001 C CNN
+	1    6500 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3500 5150 3500
+Wire Wire Line
+	6500 3500 6500 3750
+Connection ~ 6500 3500
+Wire Wire Line
+	6100 2500 6100 2800
+Wire Wire Line
+	6100 2800 6250 2800
+Wire Wire Line
+	6750 2800 6900 2800
+Wire Wire Line
+	6900 2800 6900 2500
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J901
+U 1 1 5ED3A6B8
+P 4850 3400
+F 0 "J901" H 4900 4017 50  0000 C CNN
+F 1 "Conn_02x10" H 4900 3926 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 4850 3400 50  0001 C CNN
+F 3 "~" H 4850 3400 50  0001 C CNN
+	1    4850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F36CF21
+P 7800 3550
+F 0 "#PWR?" H 7800 3300 50  0001 C CNN
+F 1 "GND" H 7805 3377 50  0000 C CNN
+F 2 "" H 7800 3550 50  0001 C CNN
+F 3 "" H 7800 3550 50  0001 C CNN
+	1    7800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F36F45D
+P 7400 3550
+F 0 "#PWR?" H 7400 3300 50  0001 C CNN
+F 1 "GND" H 7405 3377 50  0000 C CNN
+F 2 "" H 7400 3550 50  0001 C CNN
+F 3 "" H 7400 3550 50  0001 C CNN
+	1    7400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F36F8C5
+P 7000 3550
+F 0 "#PWR?" H 7000 3300 50  0001 C CNN
+F 1 "GND" H 7005 3377 50  0000 C CNN
+F 2 "" H 7000 3550 50  0001 C CNN
+F 3 "" H 7000 3550 50  0001 C CNN
+	1    7000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F370385
+P 4400 5750
+F 0 "#PWR?" H 4400 5500 50  0001 C CNN
+F 1 "GNDA" H 4405 5577 50  0000 C CNN
+F 2 "" H 4400 5750 50  0001 C CNN
+F 3 "" H 4400 5750 50  0001 C CNN
+	1    4400 5750
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

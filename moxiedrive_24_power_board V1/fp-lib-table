@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "24_moxie_drive")(type "KiCad")(uri "C:/Users/marsh/Google Drive/hardware design/motor controller design/24mos_chinsyvesc/libraries/24_moxie_drive.pretty")(options "")(descr ""))
+  (lib (name "pkl_dipol")(type "KiCad")(uri "C:/Users/mscholz/Google Drive/hardware design/motor controller design/24mos_chinsyvesc/libraries/pkl_dipol.pretty")(options "")(descr ""))
+)

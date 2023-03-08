@@ -1,0 +1,63 @@
+{
+  "appearance": {
+    "canvas_scale": 1.0,
+    "icon_scale": -1,
+    "use_icons_in_menus": true
+  },
+  "auto_backup": {
+    "backup_on_autosave": false,
+    "enabled": true,
+    "limit_daily_files": 5,
+    "limit_total_files": 25,
+    "limit_total_size": 104857600,
+    "min_interval": 300
+  },
+  "environment": {
+    "show_warning_dialog": false,
+    "vars": {
+      "KICAD_SYMBOL_DIR": "C:\\Program Files\\KiCad_nightly\\share\\kicad\\library",
+      "KICAD_TEMPLATE_DIR": "C:\\Program Files\\KiCad_nightly\\share\\kicad\\template",
+      "KICAD_USER_TEMPLATE_DIR": "C:\\Users\\marsh\\Documents\\kicad\\template",
+      "KIGITHUB": "https://github.com/KiCad",
+      "KISYS3DMOD": "C:\\Program Files\\KiCad_nightly\\share\\kicad\\modules\\packages3d\\",
+      "KISYSMOD": "C:\\Program Files\\KiCad nightly\\share\\kicad\\modules"
+    }
+  },
+  "graphics": {
+    "cairo_antialiasing_mode": 0,
+    "opengl_antialiasing_mode": 2
+  },
+  "input": {
+    "auto_pan": false,
+    "auto_pan_acceleration": 5,
+    "center_on_zoom": true,
+    "horizontal_pan": false,
+    "immediate_actions": true,
+    "mouse_middle": 2,
+    "mouse_right": 2,
+    "prefer_select_to_drag": true,
+    "scroll_modifier_pan_h": 308,
+    "scroll_modifier_pan_v": 306,
+    "scroll_modifier_zoom": 0,
+    "warp_mouse_on_move": true,
+    "zoom_acceleration": true,
+    "zoom_speed": 1,
+    "zoom_speed_auto": true
+  },
+  "meta": {
+    "version": 1
+  },
+  "session": {
+    "remember_open_files": false
+  },
+  "system": {
+    "autosave_interval": 600,
+    "clear_3d_cache_interval": 30,
+    "editor_name": "",
+    "file_history_size": 9,
+    "language": "Default",
+    "pdf_viewer_name": "",
+    "use_system_pdf_viewer": true,
+    "working_dir": "C:\\Program Files\\KiCad_nightly\\bin"
+  }
+}

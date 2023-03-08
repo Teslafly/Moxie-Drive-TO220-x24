@@ -1,0 +1,583 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0140
+U 1 1 5E3CC074
+P 6900 4250
+F 0 "#PWR0140" H 6900 4100 50  0001 C CNN
+F 1 "+5V" H 6915 4423 50  0000 C CNN
+F 2 "" H 6900 4250 50  0001 C CNN
+F 3 "" H 6900 4250 50  0001 C CNN
+	1    6900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0141
+U 1 1 5E3CC5B5
+P 4050 4250
+F 0 "#PWR0141" H 4050 4100 50  0001 C CNN
+F 1 "+3V3" H 4065 4423 50  0000 C CNN
+F 2 "" H 4050 4250 50  0001 C CNN
+F 3 "" H 4050 4250 50  0001 C CNN
+	1    4050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5E3CC9A2
+P 6900 4950
+F 0 "#PWR0142" H 6900 4700 50  0001 C CNN
+F 1 "GND" H 6905 4777 50  0000 C CNN
+F 2 "" H 6900 4950 50  0001 C CNN
+F 3 "" H 6900 4950 50  0001 C CNN
+	1    6900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5E3CC9A2
+P 6450 4950
+F 0 "#PWR0142" H 6450 4700 50  0001 C CNN
+F 1 "GND" H 6455 4777 50  0000 C CNN
+F 2 "" H 6450 4950 50  0001 C CNN
+F 3 "" H 6450 4950 50  0001 C CNN
+	1    6450 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_drive-rescue:INDUCTOR-MyCustomLib L?
+U 1 1 5E474CC2
+P 6000 1350
+AR Path="/5B1528F8/5E474CC2" Ref="L?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474CC2" Ref="L?"  Part="1" 
+AR Path="/5B3979B7/5E474CC2" Ref="L?"  Part="1" 
+AR Path="/5E3AB222/5E474CC2" Ref="L?"  Part="1" 
+F 0 "L?" V 6193 1350 40  0000 C CNN
+F 1 "4.7uH" V 6117 1350 40  0000 C CNN
+F 2 "Inductors_SMD:L_Taiyo-Yuden_NR-40xx" V 6132 1350 60  0001 C CNN
+F 3 "" H 6000 1350 60  0000 C CNN
+F 4 "NRS4018T4R7MDGJ" V 6000 1350 50  0001 C CNN "Part#"
+F 5 "" V 6000 1350 50  0001 C CNN "Field5"
+	1    6000 1350
+	0    1    -1   0   
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:C-Device C?
+U 1 1 5E474CC8
+P 5550 1550
+AR Path="/5B1528F8/5E474CC8" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474CC8" Ref="C?"  Part="1" 
+AR Path="/5B3979B7/5E474CC8" Ref="C?"  Part="1" 
+F 0 "C?" H 5665 1596 50  0000 L CNN
+F 1 "100nf" H 5665 1505 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 5588 1400 50  0001 C CNN
+F 3 "~" H 5550 1550 50  0001 C CNN
+	1    5550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:R-Device R?
+U 1 1 5E474CCE
+P 8000 1950
+AR Path="/5B1528F8/5E474CCE" Ref="R?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474CCE" Ref="R?"  Part="1" 
+AR Path="/5B3979B7/5E474CCE" Ref="R?"  Part="1" 
+F 0 "R?" H 8070 1996 50  0000 L CNN
+F 1 "10k 0.1%" H 8070 1905 50  0000 L CNN
+F 2 "pkl_dipol:R_0402" V 7930 1950 50  0001 C CNN
+F 3 "~" H 8000 1950 50  0001 C CNN
+	1    8000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:R-Device R?
+U 1 1 5E474CD4
+P 8000 1550
+AR Path="/5B1528F8/5E474CD4" Ref="R?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474CD4" Ref="R?"  Part="1" 
+AR Path="/5B3979B7/5E474CD4" Ref="R?"  Part="1" 
+F 0 "R?" H 8070 1596 50  0000 L CNN
+F 1 "R33.2k 0.1%" V 7900 1450 50  0000 L CNN
+F 2 "pkl_dipol:R_0402" V 7930 1550 50  0001 C CNN
+F 3 "~" H 8000 1550 50  0001 C CNN
+	1    8000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 5E474CDA
+P 4750 1800
+AR Path="/5B1528F8/5E474CDA" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474CDA" Ref="#PWR?"  Part="1" 
+AR Path="/5B3979B7/5E474CDA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4750 1550 50  0001 C CNN
+F 1 "GND" H 4755 1627 50  0000 C CNN
+F 2 "" H 4750 1800 50  0001 C CNN
+F 3 "" H 4750 1800 50  0001 C CNN
+	1    4750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1750 4750 1800
+Wire Wire Line
+	5150 1350 5550 1350
+Wire Wire Line
+	5550 1400 5550 1350
+Connection ~ 5550 1350
+Wire Wire Line
+	5550 1350 5700 1350
+Wire Wire Line
+	5550 1700 5550 1750
+Wire Wire Line
+	5550 1750 5400 1750
+Wire Wire Line
+	5400 1750 5400 1450
+Wire Wire Line
+	5400 1450 5150 1450
+Wire Wire Line
+	5150 1550 5250 1550
+$Comp
+L MoxiE_Control_board-rescue:C-Device C?
+U 1 1 5E474CEA
+P 6450 1550
+AR Path="/5B1528F8/5E474CEA" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474CEA" Ref="C?"  Part="1" 
+AR Path="/5B3979B7/5E474CEA" Ref="C?"  Part="1" 
+AR Path="/5E3AB222/5E474CEA" Ref="C?"  Part="1" 
+F 0 "C?" H 6565 1596 50  0000 L CNN
+F 1 "2.2uf" H 6565 1505 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 6488 1400 50  0001 C CNN
+F 3 "~" H 6450 1550 50  0001 C CNN
+	1    6450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:C-Device C?
+U 1 1 5E474CF0
+P 6950 1550
+AR Path="/5B1528F8/5E474CF0" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474CF0" Ref="C?"  Part="1" 
+AR Path="/5B3979B7/5E474CF0" Ref="C?"  Part="1" 
+F 0 "C?" H 7065 1596 50  0000 L CNN
+F 1 "2.2uf" H 7065 1505 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 6988 1400 50  0001 C CNN
+F 3 "~" H 6950 1550 50  0001 C CNN
+	1    6950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:CP-Device C?
+U 1 1 5E474CF7
+P 7450 1550
+AR Path="/5B1528F8/5E474CF7" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474CF7" Ref="C?"  Part="1" 
+AR Path="/5B3979B7/5E474CF7" Ref="C?"  Part="1" 
+AR Path="/5E3AB222/5E474CF7" Ref="C?"  Part="1" 
+F 0 "C?" H 7568 1596 50  0000 L CNN
+F 1 "100uf" H 7568 1505 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Reflow" H 7488 1400 50  0001 C CNN
+F 3 "~" H 7450 1550 50  0001 C CNN
+F 4 "TPSB107K006R0250 " H 7450 1550 50  0001 C CNN "Part#"
+	1    7450 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1350 6450 1350
+Wire Wire Line
+	8000 1350 8000 1400
+Wire Wire Line
+	7450 1400 7450 1350
+Wire Wire Line
+	6950 1400 6950 1350
+Wire Wire Line
+	6450 1400 6450 1350
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 5E474D02
+P 8000 2150
+AR Path="/5B1528F8/5E474D02" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474D02" Ref="#PWR?"  Part="1" 
+AR Path="/5B3979B7/5E474D02" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8000 1900 50  0001 C CNN
+F 1 "GND" H 8005 1977 50  0000 C CNN
+F 2 "" H 8000 2150 50  0001 C CNN
+F 3 "" H 8000 2150 50  0001 C CNN
+	1    8000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 5E474D08
+P 7450 1750
+AR Path="/5B1528F8/5E474D08" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474D08" Ref="#PWR?"  Part="1" 
+AR Path="/5B3979B7/5E474D08" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7450 1500 50  0001 C CNN
+F 1 "GND" H 7455 1577 50  0000 C CNN
+F 2 "" H 7450 1750 50  0001 C CNN
+F 3 "" H 7450 1750 50  0001 C CNN
+	1    7450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 5E474D0E
+P 6950 1750
+AR Path="/5B1528F8/5E474D0E" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474D0E" Ref="#PWR?"  Part="1" 
+AR Path="/5B3979B7/5E474D0E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6950 1500 50  0001 C CNN
+F 1 "GND" H 6955 1577 50  0000 C CNN
+F 2 "" H 6950 1750 50  0001 C CNN
+F 3 "" H 6950 1750 50  0001 C CNN
+	1    6950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 5E474D14
+P 6450 1750
+AR Path="/5B1528F8/5E474D14" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474D14" Ref="#PWR?"  Part="1" 
+AR Path="/5B3979B7/5E474D14" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 1500 50  0001 C CNN
+F 1 "GND" H 6455 1577 50  0000 C CNN
+F 2 "" H 6450 1750 50  0001 C CNN
+F 3 "" H 6450 1750 50  0001 C CNN
+	1    6450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1750 6450 1700
+Wire Wire Line
+	6950 1750 6950 1700
+Wire Wire Line
+	7450 1750 7450 1700
+Wire Wire Line
+	8000 1800 8000 1750
+Wire Wire Line
+	8000 2150 8000 2100
+Wire Wire Line
+	8000 1750 7900 1750
+Wire Wire Line
+	7900 1750 7900 2050
+Connection ~ 8000 1750
+Wire Wire Line
+	8000 1750 8000 1700
+Wire Wire Line
+	5250 1550 5250 2050
+$Comp
+L MoxiE_drive-cache:+3.3V #PWR?
+U 1 1 5E474D24
+P 7450 1250
+AR Path="/5B1528F8/5E474D24" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474D24" Ref="#PWR?"  Part="1" 
+AR Path="/5B3979B7/5E474D24" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7450 1100 50  0001 C CNN
+F 1 "+3.3V" H 7465 1423 50  0000 C CNN
+F 2 "" H 7450 1250 50  0001 C CNN
+F 3 "" H 7450 1250 50  0001 C CNN
+	1    7450 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1350 7450 1250
+Connection ~ 7450 1350
+$Comp
+L MoxiE_Control_board-rescue:C-Device C?
+U 1 1 5E474D2C
+P 8350 1550
+AR Path="/5B1528F8/5E474D2C" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474D2C" Ref="C?"  Part="1" 
+AR Path="/5B3979B7/5E474D2C" Ref="C?"  Part="1" 
+F 0 "C?" H 8465 1596 50  0000 L CNN
+F 1 "NP" H 8465 1505 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 8388 1400 50  0001 C CNN
+F 3 "~" H 8350 1550 50  0001 C CNN
+	1    8350 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1400 8350 1350
+Wire Wire Line
+	8350 1350 8000 1350
+Connection ~ 8000 1350
+Wire Wire Line
+	8350 1700 8350 1750
+Wire Wire Line
+	8350 1750 8000 1750
+Wire Wire Line
+	7450 1350 8000 1350
+Wire Wire Line
+	6950 1350 7450 1350
+Connection ~ 6950 1350
+Wire Wire Line
+	6450 1350 6950 1350
+Connection ~ 6450 1350
+Wire Wire Line
+	5250 2050 7900 2050
+Wire Wire Line
+	2900 1350 2900 1100
+Wire Wire Line
+	2900 1350 2900 1400
+Connection ~ 2900 1350
+Wire Wire Line
+	4250 1550 4350 1550
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 5E474D41
+P 2900 1750
+AR Path="/5B1528F8/5E474D41" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474D41" Ref="#PWR?"  Part="1" 
+AR Path="/5B3979B7/5E474D41" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2900 1500 50  0001 C CNN
+F 1 "GND" H 2905 1577 50  0000 C CNN
+F 2 "" H 2900 1750 50  0001 C CNN
+F 3 "" H 2900 1750 50  0001 C CNN
+	1    2900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1750 2900 1700
+Text Notes 6400 1250 0    50   ~ 0
+3.3v@400ma designed\ncan probably do more
+$Comp
+L MoxiE_Control_board-rescue:C-Device C?
+U 1 1 5E474D49
+P 2900 1550
+AR Path="/5B1528F8/5E474D49" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474D49" Ref="C?"  Part="1" 
+AR Path="/5B3979B7/5E474D49" Ref="C?"  Part="1" 
+F 0 "C?" H 3015 1596 50  0000 L CNN
+F 1 "10uf" H 3015 1505 50  0000 L CNN
+F 2 "pkl_dipol:C_0603" H 2938 1400 50  0001 C CNN
+F 3 "~" H 2900 1550 50  0001 C CNN
+	1    2900 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1350 3350 1350
+$Comp
+L power:+15V #PWR?
+U 1 1 5E474D50
+P 2900 1100
+AR Path="/5D44BA97/5E474D50" Ref="#PWR?"  Part="1" 
+AR Path="/5B3979B7/5E474D50" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2900 950 50  0001 C CNN
+F 1 "+15V" H 3000 1150 50  0000 C CNN
+F 2 "" H 2900 1100 50  0001 C CNN
+F 3 "" H 2900 1100 50  0001 C CNN
+	1    2900 1100
+	1    0    0    -1  
+$EndComp
+Text HLabel 8700 1350 2    50   Output ~ 0
++3.3V
+Wire Wire Line
+	8700 1350 8350 1350
+Connection ~ 8350 1350
+Text HLabel 2600 1350 0    50   Input ~ 0
+10-20vin
+Wire Wire Line
+	2600 1350 2900 1350
+Text Notes 5350 900  0    50   ~ 0
+inductor, 1.5mm high max
+$Comp
+L MoxiE_Control_board-rescue:GND-power #PWR?
+U 1 1 5E474D5C
+P 3350 1750
+AR Path="/5B1528F8/5E474D5C" Ref="#PWR?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474D5C" Ref="#PWR?"  Part="1" 
+AR Path="/5B3979B7/5E474D5C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3350 1500 50  0001 C CNN
+F 1 "GND" H 3355 1577 50  0000 C CNN
+F 2 "" H 3350 1750 50  0001 C CNN
+F 3 "" H 3350 1750 50  0001 C CNN
+	1    3350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1750 3350 1700
+$Comp
+L MoxiE_Control_board-rescue:C-Device C?
+U 1 1 5E474D63
+P 3350 1550
+AR Path="/5B1528F8/5E474D63" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474D63" Ref="C?"  Part="1" 
+AR Path="/5B3979B7/5E474D63" Ref="C?"  Part="1" 
+F 0 "C?" H 3465 1596 50  0000 L CNN
+F 1 "10uf" H 3465 1505 50  0000 L CNN
+F 2 "pkl_dipol:C_0603" H 3388 1400 50  0001 C CNN
+F 3 "~" H 3350 1550 50  0001 C CNN
+	1    3350 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1400 3350 1350
+Connection ~ 3350 1350
+Wire Wire Line
+	4250 1550 4250 1350
+Connection ~ 4250 1350
+Wire Wire Line
+	4250 1350 4350 1350
+Wire Wire Line
+	3350 1350 4250 1350
+Text Notes 5300 2050 0    16   ~ 0
+LOGIC_BK_FB
+Text Notes 5200 1350 0    14   ~ 0
+LOGIC_BK_SW
+Text Notes 5200 1450 0    14   ~ 0
+LOGIC_BK_BST
+$Comp
+L MoxiE_Control_board-rescue:TPS563200-Regulator_Switching U?
+U 1 1 5E474CBA
+P 4750 1450
+AR Path="/5B1528F8/5E474CBA" Ref="U?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E474CBA" Ref="U?"  Part="1" 
+AR Path="/5B3979B7/5E474CBA" Ref="U?"  Part="1" 
+AR Path="/5E3AB222/5E474CBA" Ref="U?"  Part="1" 
+F 0 "U?" H 4750 1817 50  0000 C CNN
+F 1 "TPS561201" H 4750 1726 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 4800 1200 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps563200.pdf" H 4750 1450 50  0001 C CNN
+	1    4750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:C-Device C?
+U 1 1 5E476490
+P 4050 4600
+AR Path="/5B1528F8/5E476490" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E476490" Ref="C?"  Part="1" 
+AR Path="/5B3979B7/5E476490" Ref="C?"  Part="1" 
+AR Path="/5E3AB222/5E476490" Ref="C?"  Part="1" 
+F 0 "C?" H 4165 4646 50  0000 L CNN
+F 1 "2.2uf" H 4165 4555 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 4088 4450 50  0001 C CNN
+F 3 "~" H 4050 4600 50  0001 C CNN
+	1    4050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:CP-Device C?
+U 1 1 5E4769C1
+P 6900 4600
+AR Path="/5B1528F8/5E4769C1" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E4769C1" Ref="C?"  Part="1" 
+AR Path="/5B3979B7/5E4769C1" Ref="C?"  Part="1" 
+AR Path="/5E3AB222/5E4769C1" Ref="C?"  Part="1" 
+F 0 "C?" H 7018 4646 50  0000 L CNN
+F 1 "100uf" H 7018 4555 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Reflow" H 6938 4450 50  0001 C CNN
+F 3 "~" H 6900 4600 50  0001 C CNN
+F 4 "TPSB107K006R0250 " H 6900 4600 50  0001 C CNN "Part#"
+	1    6900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_Control_board-rescue:C-Device C?
+U 1 1 5E476F05
+P 6450 4600
+AR Path="/5B1528F8/5E476F05" Ref="C?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E476F05" Ref="C?"  Part="1" 
+AR Path="/5B3979B7/5E476F05" Ref="C?"  Part="1" 
+AR Path="/5E3AB222/5E476F05" Ref="C?"  Part="1" 
+F 0 "C?" H 6565 4646 50  0000 L CNN
+F 1 "2.2uf" H 6565 4555 50  0000 L CNN
+F 2 "pkl_dipol:C_0402" H 6488 4450 50  0001 C CNN
+F 3 "~" H 6450 4600 50  0001 C CNN
+	1    6450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MoxiE_drive-rescue:INDUCTOR-MyCustomLib L?
+U 1 1 5E47761E
+P 4650 4350
+AR Path="/5B1528F8/5E47761E" Ref="L?"  Part="1" 
+AR Path="/5B39743C/5B3979B7/5E47761E" Ref="L?"  Part="1" 
+AR Path="/5B3979B7/5E47761E" Ref="L?"  Part="1" 
+AR Path="/5E3AB222/5E47761E" Ref="L?"  Part="1" 
+F 0 "L?" V 4843 4350 40  0000 C CNN
+F 1 "4.7uH" V 4767 4350 40  0000 C CNN
+F 2 "Inductors_SMD:L_Taiyo-Yuden_NR-40xx" V 4782 4350 60  0001 C CNN
+F 3 "" H 4650 4350 60  0000 C CNN
+F 4 "NRS4018T4R7MDGJ" V 4650 4350 50  0001 C CNN "Part#"
+F 5 "" V 4650 4350 50  0001 C CNN "Field5"
+	1    4650 4350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6900 4250 6900 4350
+Wire Wire Line
+	6900 4350 6450 4350
+Wire Wire Line
+	6450 4350 6450 4450
+Connection ~ 6900 4350
+Wire Wire Line
+	6900 4350 6900 4450
+Wire Wire Line
+	6450 4750 6450 4950
+Wire Wire Line
+	6900 4750 6900 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5E47DA4E
+P 4050 4950
+F 0 "#PWR?" H 4050 4700 50  0001 C CNN
+F 1 "GND" H 4055 4777 50  0000 C CNN
+F 2 "" H 4050 4950 50  0001 C CNN
+F 3 "" H 4050 4950 50  0001 C CNN
+	1    4050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4750 4050 4950
+$Comp
+L MoxiE_drive_symbol_lib:ME2188 U?
+U 1 1 5E4855CA
+P 5650 4450
+F 0 "U?" H 5650 4771 31  0000 C CNN
+F 1 "ME2188" H 5650 4709 31  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5650 4250 31  0001 C CNN
+F 3 "" H 5650 4750 31  0001 C CNN
+	1    5650 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4250 4050 4350
+Wire Wire Line
+	4350 4350 4050 4350
+Connection ~ 4050 4350
+Wire Wire Line
+	4050 4350 4050 4450
+Wire Wire Line
+	4950 4350 5250 4350
+Wire Wire Line
+	6050 4350 6450 4350
+Connection ~ 6450 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5E48D9A9
+P 5650 5000
+F 0 "#PWR?" H 5650 4750 50  0001 C CNN
+F 1 "GND" H 5655 4827 50  0000 C CNN
+F 2 "" H 5650 5000 50  0001 C CNN
+F 3 "" H 5650 5000 50  0001 C CNN
+	1    5650 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5000 5650 4700
+$EndSCHEMATC

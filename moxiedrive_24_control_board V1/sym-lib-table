@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name MoxiE_Control_board-rescue)(type Legacy)(uri "C:/Users/marsh/Google Drive/hardware design/motor controller design/24mos_chinsyvesc/24_control_board/MoxiE_Control_board-rescue.lib")(options "")(descr "")(disabled))
+  (lib (name MoxiE_drive-cache)(type Legacy)(uri "C:/Users/marsh/Google Drive/hardware design/motor controller design/24mos_chinsyvesc/24_control_board/MoxiE_drive-cache.lib")(options "")(descr "")(disabled))
+  (lib (name MoxiE_drive-rescue)(type Legacy)(uri "C:/Users/marsh/Google Drive/hardware design/motor controller design/24mos_chinsyvesc/24_control_board/MoxiE_drive-rescue.lib")(options "")(descr "")(disabled))
+  (lib (name MoxiE_drive_symbol_lib)(type Legacy)(uri "C:/Users/marsh/Google Drive/hardware design/motor controller design/24mos_chinsyvesc/libraries/MoxiE_drive_symbol_lib.lib")(options "")(descr ""))
+  (lib (name 24_control_board-rescue)(type Legacy)(uri ${KIPRJMOD}/24_control_board-rescue.lib)(options "")(descr ""))
+)

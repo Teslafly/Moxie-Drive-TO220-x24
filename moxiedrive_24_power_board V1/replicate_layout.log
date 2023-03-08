@@ -1,0 +1,85 @@
+08-09 00:07:25 replicate_layout.action_replicate_layout 305:Plugin executed on: 'win32'
+08-09 00:07:25 replicate_layout.action_replicate_layout 306:Plugin executed with python version: '2.7.16 (default, Aug 15 2019, 17:51:40)  [GCC 9.2.0 64 bit (AMD64)]'
+08-09 00:07:25 replicate_layout.action_replicate_layout 307:KiCad build version: (5.1.6)-1
+08-09 00:07:25 replicate_layout.action_replicate_layout 308:Replicate layout plugin version: 68 started
+08-09 00:07:25 replicate_layout.action_replicate_layout 319:wx top level windows: wxWindowList: [<wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x30b5290> >, <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x2fc74b0> >, <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x94a0160> >, <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0xa2da3f0> >, <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0xa2daad0> >, <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x5af87080> >, <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0xa2da760> >, <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x8f84150> >, <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x797b28a0> >]
+08-09 00:07:25 replicate_layout.action_replicate_layout 343:Preparing replicator with Q308 as a reference
+08-09 00:07:25 replicate_layout.replicatelayout 215:getting project hierarchy from schematics
+08-09 00:07:25 replicate_layout.replicatelayout 217:Project hierarchy looks like:
+{u'5EBE5E4F': [u'Phase A', u'C:\\Users\\marsh\\Google Drive\\hardware design\\motor controller design\\24mos_chinsyvesc\\24_power_board\\Power phase.sch'], u'5F14D9C8': [u'Inrush Limiter', u'C:\\Users\\marsh\\Google Drive\\hardware design\\motor controller design\\24mos_chinsyvesc\\24_power_board\\inrush_lim.sch'], u'5F163C60': [u'Phase B', u'C:\\Users\\marsh\\Google Drive\\hardware design\\motor controller design\\24mos_chinsyvesc\\24_power_board\\Power phase.sch'], u'5F1665A7': [u'Phase C', u'C:\\Users\\marsh\\Google Drive\\hardware design\\motor controller design\\24mos_chinsyvesc\\24_power_board\\Power phase.sch'], u'5ED2A3DF': [u'50v to12v@1A', u'C:\\Users\\marsh\\Google Drive\\hardware design\\motor controller design\\24mos_chinsyvesc\\24_power_board\\50v_to_12v_1A.sch'], u'5F0B2338': [u'Isense_Backup_shunts', u'C:\\Users\\marsh\\Google Drive\\hardware design\\motor controller design\\24mos_chinsyvesc\\24_power_board\\shunt_isense.sch']}
+08-09 00:07:25 replicate_layout.replicatelayout 225:getting a list of all footprints on board
+08-09 00:07:25 replicate_layout.action_replicate_layout 370:source anchor footprint is u'Q308'
+Located on:[u'Phase A']
+With filenames:[u'Power phase.sch']
+With sheet_id:[u'Phase A']
+08-09 00:07:25 replicate_layout.action_replicate_layout 374:Corresponding footprints are 
+[(u'Q708', [u'Phase C']), (u'Q508', [u'Phase B']), (u'Q308', [u'Phase A'])]
+08-09 00:07:25 replicate_layout.action_replicate_layout 387:Showing dialog
+08-09 00:07:25 replicate_layout.action_replicate_layout 391:Pcbnew position: wx.Point(2391, -518)
+08-09 00:07:25 replicate_layout.action_replicate_layout 397:Display 0: wx.Rect(0, 0, 1920, 1080)
+08-09 00:07:25 replicate_layout.action_replicate_layout 397:Display 1: wx.Rect(2400, -509, 2400, 1350)
+08-09 00:07:25 replicate_layout.action_replicate_layout 401:Toolbar position: wx.Point(4567, -383)
+08-09 00:07:25 replicate_layout.action_replicate_layout 408:Dialog position: wx.Point(4254, -383)
+08-09 00:07:27 replicate_layout.replicatelayout 249:construcing a list of sheets suitable for replication on level:u'Phase A', file:u'Power phase.sch'
+08-09 00:07:27 replicate_layout.replicatelayout 256:Source sheet path up to the level:[u'Phase A']
+08-09 00:07:27 replicate_layout.replicatelayout 260:Footprints on the sheets:
+[u'Q708', u'Q508', u'Q308']
+08-09 00:07:27 replicate_layout.replicatelayout 263:Footprints raw sheet ids:
+[u'/5F1665A7/5EBB8FB1', u'/5F163C60/5EBB8FB1', u'/5EBE5E4F/5EBB8FB1']
+08-09 00:07:27 replicate_layout.replicatelayout 279:All sheets to replicate:
+[[u'Phase C'], [u'Phase B'], [u'Phase A']]
+08-09 00:07:27 replicate_layout.replicatelayout 284:All sheets to replicate sorted:
+[[u'Phase A'], [u'Phase B'], [u'Phase C']]
+08-09 00:07:27 replicate_layout.replicatelayout 290:All sheets to replicate sorted and without source sheet:
+[[u'Phase B'], [u'Phase C']]
+08-09 00:07:38 replicate_layout.replicatelayout 249:construcing a list of sheets suitable for replication on level:u'Phase A', file:u'Power phase.sch'
+08-09 00:07:38 replicate_layout.replicatelayout 256:Source sheet path up to the level:[u'Phase A']
+08-09 00:07:38 replicate_layout.replicatelayout 260:Footprints on the sheets:
+[u'Q708', u'Q508', u'Q308']
+08-09 00:07:38 replicate_layout.replicatelayout 263:Footprints raw sheet ids:
+[u'/5F1665A7/5EBB8FB1', u'/5F163C60/5EBB8FB1', u'/5EBE5E4F/5EBB8FB1']
+08-09 00:07:38 replicate_layout.replicatelayout 279:All sheets to replicate:
+[[u'Phase C'], [u'Phase B'], [u'Phase A']]
+08-09 00:07:38 replicate_layout.replicatelayout 284:All sheets to replicate sorted:
+[[u'Phase A'], [u'Phase B'], [u'Phase C']]
+08-09 00:07:38 replicate_layout.replicatelayout 290:All sheets to replicate sorted and without source sheet:
+[[u'Phase B'], [u'Phase C']]
+08-09 00:07:38 replicate_layout.action_replicate_layout 179:Replicating layout
+08-09 00:07:38 replicate_layout.replicatelayout 990:Starting replication of sheets: [[u'Phase B'], [u'Phase C']]
+on level: [u'Phase A']
+with tracks=True, zone=False, text=False, containing=True, remove=False, locked=False
+08-09 00:07:38 root 261:updating GUI message: 'Preparing for replication'
+08-09 00:07:38 root 266:updating GUI with: 0
+08-09 00:07:38 replicate_layout.replicatelayout 556:Getting the list of source footprints
+08-09 00:07:38 replicate_layout.replicatelayout 560:Getting the list of all the remaining footprints
+08-09 00:07:38 replicate_layout.replicatelayout 564:Getting nets local to source footprints
+08-09 00:07:38 replicate_layout.replicatelayout 568:Getting source bounding box
+08-09 00:07:38 root 266:updating GUI with: 37
+08-09 00:07:38 replicate_layout.replicatelayout 572:Getting source tracks
+08-09 00:07:38 replicate_layout.replicatelayout 576:Getting source zones
+08-09 00:07:38 root 266:updating GUI with: 62
+08-09 00:07:38 replicate_layout.replicatelayout 580:Getting source text items
+08-09 00:07:38 replicate_layout.replicatelayout 584:Getting source text items
+08-09 00:07:38 root 261:updating GUI message: 'Replicating footprints'
+08-09 00:07:38 replicate_layout.replicatelayout 590:Replicating footprints
+08-09 00:07:38 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'Phase B']
+08-09 00:07:38 root 266:updating GUI with: 3
+08-09 00:07:38 root 266:updating GUI with: 9
+08-09 00:07:38 root 266:updating GUI with: 24
+08-09 00:07:38 root 266:updating GUI with: 49
+08-09 00:07:38 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'Phase C']
+08-09 00:07:38 root 266:updating GUI with: 58
+08-09 00:07:38 root 266:updating GUI with: 68
+08-09 00:07:38 root 266:updating GUI with: 92
+08-09 00:07:38 root 261:updating GUI message: 'Replicating tracks'
+08-09 00:07:38 replicate_layout.replicatelayout 716:Replicating tracks
+08-09 00:07:38 replicate_layout.replicatelayout 722:Replicating tracks on sheet [u'Phase B']
+08-09 00:07:38 root 266:updating GUI with: 0
+08-09 00:07:38 replicate_layout.replicatelayout 722:Replicating tracks on sheet [u'Phase C']
+08-09 00:07:38 root 266:updating GUI with: 50
+08-09 00:07:38 root 261:updating GUI message: 'Replicating drawings'
+08-09 00:07:38 replicate_layout.replicatelayout 864:Replicating drawings
+08-09 00:07:38 replicate_layout.replicatelayout 870:Replicating drawings on sheet [u'Phase B']
+08-09 00:07:38 replicate_layout.replicatelayout 870:Replicating drawings on sheet [u'Phase C']
+08-09 00:07:38 root 261:updating GUI message: 'Removing duplicates'
+08-09 00:07:39 replicate_layout.action_replicate_layout 201:Replication complete

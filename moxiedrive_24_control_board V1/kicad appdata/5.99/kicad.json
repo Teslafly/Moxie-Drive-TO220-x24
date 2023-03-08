@@ -1,0 +1,81 @@
+{
+  "appearance": {
+    "color_theme": "user",
+    "left_frame_width": 335
+  },
+  "color_picker": {
+    "default_tab": 0
+  },
+  "cross_probing": {
+    "auto_highlight": true,
+    "center_on_items": true,
+    "zoom_to_fit": true
+  },
+  "find_replace": {
+    "find_history": [],
+    "find_string": "",
+    "flags": 1,
+    "replace_history": [],
+    "replace_string": ""
+  },
+  "graphics": {
+    "canvas_type": 2,
+    "high_contrast_factor": 0.3499999940395355,
+    "highlight_factor": 0.5,
+    "select_factor": 0.75
+  },
+  "lib_tree": {
+    "column_width": 360
+  },
+  "meta": {
+    "version": 0
+  },
+  "printing": {
+    "background": false,
+    "color_theme": "",
+    "layers": [],
+    "monochrome": true,
+    "scale": 1.0,
+    "title_block": false,
+    "use_theme": false
+  },
+  "system": {
+    "file_history": [
+      "C:\\Users\\marsh\\Google Drive\\hardware design\\motor controller design\\24mos_chinsyvesc\\24_control_board nightlynew\\24_control_board.kicad_pro"
+    ],
+    "first_run_shown": false,
+    "max_undo_items": 0,
+    "open_projects": [
+      "C:\\Users\\marsh\\Google Drive\\hardware design\\motor controller design\\24mos_chinsyvesc\\24_control_board nightlynew\\24_control_board.kicad_pro"
+    ],
+    "units": 1
+  },
+  "window": {
+    "cursor": {
+      "always_show_cursor": true,
+      "fullscreen_cursor": false
+    },
+    "display": 0,
+    "grid": {
+      "axes_enabled": false,
+      "fast_grid_1": 1,
+      "fast_grid_2": 2,
+      "last_size": 1,
+      "line_width": 1.0,
+      "min_spacing": 10.0,
+      "show": true,
+      "sizes": [],
+      "style": 0,
+      "user_grid_x": "10 mil",
+      "user_grid_y": "10 mil"
+    },
+    "maximized": false,
+    "mru_path": "C:\\Users\\marsh\\Google Drive\\hardware design\\motor controller design\\24mos_chinsyvesc\\24_control_board nightlynew\\",
+    "perspective": "layout2|name=MainToolbar;caption=;state=139644;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=273;besth=36;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ProjectTree;caption=;state=508;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=335;besth=-1;minw=200;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Launcher;caption=;state=139644;dir=1;layer=1;row=0;pos=0;prop=100000;bestw=474;besth=58;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=101;besth=40;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=36|dock_size(4,3,0)=335|dock_size(1,1,0)=58|dock_size(5,0,0)=101|",
+    "pos_x": -8,
+    "pos_y": 0,
+    "size_x": 1936,
+    "size_y": 1050,
+    "zoom_factors": []
+  }
+}

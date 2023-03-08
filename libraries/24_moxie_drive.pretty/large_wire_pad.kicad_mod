@@ -1,0 +1,9 @@
+(module Mas_custom_parts:large_wire_pad (layer F.Cu) (tedit 5AEF965A)
+  (fp_text reference P109 (at 0.127 8.001) (layer Dwgs.User)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value PHASE_3 (at -4.064 -0.254 90) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 smd rect (at 0 0) (size 7 8) (layers F.Cu F.Paste F.Mask))
+)
